@@ -1,0 +1,227 @@
+/* 10px = 0.625rem
+12px = 0.75rem
+14px = 0.875rem
+16px = 1rem (base)
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+30px = 1.875rem
+32px = 2rem */
+
+[class^="box-"] {
+    display: none;
+}
+[class^="box-"].showfirst {
+    display: block;
+}
+:root {
+    /* --theme-color: #13063D;
+    --theme-light: #7939FE; */
+    /* --gray-dark: #282828; */
+    --default-color: #fff;
+    --color-green: #1c8a82;
+    --color-red: #bf2424;
+    --color-yellow: #f7b318;
+    --color-gradiant: (45deg, #17c0ae, #f9b416);
+    --mont: "Montserrat", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --cabinet: "cabinet";
+    --black: #000;
+    --black-333: #333333;
+    --light-black: #131313;
+    --dim-black: #333;
+    --text-12: 1.2rem;
+    --text-13: 1.3rem;
+    --text-14: 1.4rem;
+    --text-15: 1.5rem;
+    --text-18: 1.8rem;
+    --text-20: 2rem;
+    --text-21: 2.1rem;
+    --text-23: 2.3rem;
+    --text-25: 2.5rem;
+    --text-26: 2.6rem;
+    --text-27: 2.7rem;
+    --text-30: 3rem;
+    --text-35: 3.5rem;
+    --text-42: 4.2rem;
+    --text-45: 4.5rem;
+    --text-55: 5.5rem;
+    --text-56: 5.6rem;
+    --text-70: 7rem;
+    --text-75: 7.5rem;
+    --text-145: 14.5rem;
+    --shadow-normal: 1px 1px 11px 0px rgb(105 105 177 / 20%);
+    font-size: 62.5%;
+}
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--theme-light);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--theme-color);
+}
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 16px !important;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--theme-color);
+}
+
+/* defaults end  */
+/* global css  */
+.font-mont {
+    font-family: var(--mont);
+}
+.font-cabinet {
+    font-family: var(--cabinet);
+}
+.font-poppins {
+    font-family: var(--poppins);
+}
+.font-400 {
+    font-weight: 400;
+}
+.font-500 {
+    font-weight: 500;
+}
+.font-700 {
+    font-weight: 700;
+}
+.light-black {
+    color: var(--light-black);
+}
+/* pads */
+.pl-5 {
+    padding-left: 0.5rem;
+}
+.pr-5 {
+    padding-right: 0.5rem;
+}
+/* pads end */
+/* margins  */
+.mt-20 {
+    margin-top: 2rem;
+}
+.mb-20 {
+    margin-bottom: 2rem;
+}
+/* margins end */
+/* font-sizes  */
+.f-56 {
+    font-size: var(--text-56);
+}
+.f-20 {
+    font-size: var(--text-20);
+}
+/* font-sizes end */
+/* colors  */
+.color-red {
+    color: var(--color-red);
+}
+.dim-black {
+    color: var(--dim-black);
+}
+.color-black {
+    color: var(--black);
+}
+.black-333 {
+    color: var(--black-333);
+}
+
+/* colors end */
+.line-h-32 {
+    line-height: 32px;
+}
+/* global css end */
+p {
+    color: #000000d4;
+}
+/* header */
+.logo img {
+    max-width: 60px;
+}
+.header {
+    padding: 2rem 7rem 0 1.3rem;
+}
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+.top-contact-list {
+    background: url(../images/contact-list-bg.png) no-repeat;
+    padding: 1rem 1rem 1.5rem 2rem;
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 50%);
+}
+.top-contact-list li a {
+    font-size: var(--text-15);
+}
+.top-contact-list li a {
+    margin-right: 1.5rem;
+}
+/* header end */
+/* banner css */
+.hero-banner {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(../images/banner-bg.webp);
+    padding-top: 18.3rem;
+    padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.top-contact-list li i {
+    color: var(--color-red);
+}
+.right-arrow-wrap i {
+    border: 2px solid var(--black-333);    
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: var(--text-20);
+    
+}
+/* banner css end */
+
+@media (min-width: 1440px) {
+    .m-container {
+        max-width: 1500px !important;
+    }
+}
+@media (max-width: 1280px) {
+    :root {
+        font-size: 48%;
+    }
+}
+@media (max-width: 992px) {
+    :root {
+        font-size: 46%;
+    }
+}
+@media (max-width: 767px) {
+    :root {
+        font-size: 40%;
+    }
+}
